@@ -27,8 +27,4 @@ Commands available in the demo:
 
 The web frontend can be started locally with:
 
-```bash
-cd web && npm run dev
-```
 
-Feel free to extend the modules and integrations to suit your personal workflow.
