@@ -26,3 +26,65 @@ Commands available in the demo:
 
 Feel free to extend the modules and integrations to suit your personal workflow.
 
+## Installation
+
+### Python dependencies
+
+1. Create and activate a virtual environment:
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   ```
+
+2. Install required packages (FastAPI and Uvicorn are used for the API server):
+
+   ```bash
+   pip install fastapi uvicorn
+   ```
+
+### Node dependencies
+
+1. Navigate to your Next.js frontend directory (for example `frontend/`):
+
+   ```bash
+   cd frontend
+   ```
+
+2. Install packages with npm:
+
+   ```bash
+   npm install
+   ```
+
+## Development
+
+### Start the FastAPI server
+
+Run Uvicorn pointing at your FastAPI app. Assuming the app is exposed as
+`app` inside `everything_app/api.py`:
+
+```bash
+uvicorn everything_app.api:app --reload
+```
+
+### Run the Next.js frontend
+
+From the `frontend` directory, start the development server:
+
+```bash
+npm run dev
+```
+
+The frontend will typically be available at `http://localhost:3000`.
+
+## Deployment
+
+The recommended way to deploy the Next.js app is via [Vercel](https://vercel.com/).
+After installing the Vercel CLI and logging in, deploy with:
+
+```bash
+vercel --prod
+```
+
+
