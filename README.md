@@ -1,6 +1,6 @@
 # Personal Everything App
 
-This repository contains the initial foundation for a personal "Everything App". The app aims to unify many day–to–day tasks such as note taking, timers and basic integrations with services like YouTube, Gmail and Twitter.
+This repository contains the initial foundation for a personal "Everything App". The app aims to unify many day-to-day tasks such as note taking, timers and basic integrations with services like YouTube, Gmail and Twitter.
 
 ## Features
 
@@ -9,6 +9,7 @@ This repository contains the initial foundation for a personal "Everything App".
 - **Timers module** for simple countdown timers.
 - **Orders module** placeholder for future ordering features.
 - **Integrations** with YouTube, Gmail and Twitter (currently placeholders).
+- **Web UI** built with Next.js located in the `web` directory.
 
 ## Running
 
@@ -20,9 +21,14 @@ python -m everything_app.main
 
 Commands available in the demo:
 
-- `notes` &mdash; add a note.
-- `timer` &mdash; start a timer in seconds.
-- `exit` &mdash; quit the app.
+- `notes` — add a note.
+- `timer` — start a timer in seconds.
+- `exit` — quit the app.
+
+The web frontend can be started locally with:
+
+```bash
+cd web && npm run dev
+```
 
 Feel free to extend the modules and integrations to suit your personal workflow.
-
