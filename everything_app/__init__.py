@@ -34,3 +34,13 @@ class EverythingApp:
         for name in self.integrations:
             print(f" - {name}")
 
+    def run_api(self, host: str = "127.0.0.1", port: int = 8000) -> None:
+        """Start the FastAPI server bound to this ``EverythingApp``."""
+        if not self.modules:
+            self.start()
+        from .api import create_api
+        import uvicorn
+
+        api_app = create_api(self)
+        uvicorn.run(api_app, host=host, port=port)
+

@@ -19,6 +19,12 @@ The project requires Python 3. Run the CLI using:
 python -m everything_app.main
 ```
 
+To run the HTTP API instead, launch:
+
+```bash
+uvicorn everything_app.api:app
+```
+
 Commands available in the demo:
 
 - `notes` — add a note.
